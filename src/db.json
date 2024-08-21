@@ -1,0 +1,166 @@
+{
+  "employees": [
+    {
+      "firstName": "Kishore",
+      "lastName": "kumar",
+      "email": "kishore@gmail.com",
+      "edu": "Gradute",
+      "dob2": "05/12/2023",
+      "gender": "Male",
+      "company": "Amazon",
+      "experience": 12,
+      "package1": 15,
+      "id": 2
+    },
+    {
+      "firstName": "Kishore",
+      "lastName": "kumar",
+      "email": "kishore@gmail.com",
+      "edu": "Gradute",
+      "dob2": "05/12/2023",
+      "gender": "Male",
+      "company": "Amazon",
+      "experience": 12,
+      "package1": 15,
+      "id": 3
+    },
+    {
+      "firstName": "Kranthi",
+      "lastName": "kumar",
+      "email": "kranthi@gmail.com",
+      "edu": "Gradute",
+      "dob2": "2024-07-30T18:30:00.000Z",
+      "gender": "Male",
+      "company": "BankofAmeriaca",
+      "experience": "40",
+      "package1": "40",
+      "id": 5
+    },
+    {
+      "firstName": "raghu",
+      "lastName": "ram",
+      "email": "raghu@mail.com",
+      "edu": "Post Gradute",
+      "dob2": "2024-07-30T18:30:00.000Z",
+      "gender": "Male",
+      "company": "ITC",
+      "experience": "15",
+      "package1": "15",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "name": "user",
+      "password": "user",
+      "email": "kishore@gmail.com",
+      "gender": "Male",
+      "role": "user",
+      "isActive": true,
+      "address": {
+        "area": "chennai"
+      }
+    },
+    {
+      "name": "admin",
+      "password": "admin",
+      "email": "kishore@gmail.com",
+      "gender": "Male",
+      "role": "admin",
+      "isActive": true,
+      "address": {
+        "area": "chennai"
+      }
+    },
+    {
+      "name": "staff",
+      "password": "staff",
+      "email": "kishore@gmail.com",
+      "gender": "Male",
+      "role": "staff",
+      "isActive": true,
+      "address": {
+        "area": "chennai"
+      }
+    },
+    {
+      "name": "ramu",
+      "password": "ramu",
+      "email": "ramu@gmail.com",
+      "gender": "Male",
+      "role": "admin",
+      "isActive": true,
+      "address": {
+        "area": "chennai"
+      }
+    },
+    {
+      "name": "ramu",
+      "password": "ramu",
+      "email": "ramu@gmail.com",
+      "gender": "Male",
+      "role": "admin",
+      "isActive": true,
+      "address": {
+        "area": "chennai"
+      }
+    }
+  ],
+  "roles": [
+    {
+      "code": "user",
+      "name": "user"
+    },
+    {
+      "code": "admin",
+      "name": "user"
+    }
+  ],
+  "menu": [
+    {
+      "code": "user",
+      "name": "user"
+    },
+    {
+      "code": "customer",
+      "name": "customer"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "user",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": true
+    },
+    {
+      "role": "admin",
+      "menu": "customer",
+      "haveadd": true,
+      "haveedit": true,
+      "havedelete": false
+    },
+    {
+      "role": "user",
+      "menu": "user",
+      "haveadd": false,
+      "haveedit": false,
+      "havedelete": false
+    },
+    {
+      "role": "tech",
+      "menu": "customer",
+      "haveadd": false,
+      "haveedit": true,
+      "havedelete": false
+    }
+  ],
+  "customer":[
+    {
+      "id":1,
+      "name":"rakesh",
+      "creditlimit":1000
+    }
+  ]
+}

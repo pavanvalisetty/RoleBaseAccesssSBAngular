@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" >
+
+</head>
+
+<body>
+	<div class="main">
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+		<div class="signup">
+			<form>
+				<label for="chk" aria-hidden="true">Sign up</label>
+				<input  type="text" name="userName" placeholder="User name" [(ngModel)]="signupObj.userName" required="">
+				<input type="email" name="email" placeholder="Email" [(ngModel)]="signupObj.email" required="">
+				<input type="password" name="password" placeholder="Password" [(ngModel)]="signupObj.password"  required="">
+				<button (click)="onSignup()">Sign up</button>
+			</form>
+		</div>
+
+		<div class="login">
+			<form>
+				<label for="chk" aria-hidden="true">Login</label>
+				<input type="text" name="userName1" placeholder="User Name" [(ngModel)]="loginObj.userName" required="">
+				<input type="password" name="pswd" placeholder="Password" [(ngModel)]="loginObj.password" required="">
+				<button (click)="onLoginFetchTokenLatest()">Login</button>
+			</form>
+		</div>
+		<div><p *ngIf="message">{{message}}</p></div>
+	</div>
+</body>
+
+</html>

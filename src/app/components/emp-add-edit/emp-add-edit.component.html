@@ -1,0 +1,99 @@
+<div mat-dialog-title>
+    <h1>Register User Form </h1>
+</div>
+<form [formGroup]="registerform" class="example-form" (ngSubmit)="onFormSubmit()">
+
+    <div mat-dialog-content >
+        <div class="row">
+            <mat-form-field appearence="fill">
+                <mat-label>Login User Name</mat-label>
+                <input matInput formControlName="username" required="true">
+
+            </mat-form-field>
+            <mat-form-field appearence="fill">
+                <mat-label>Password</mat-label>
+                <input matInput formControlName="password" required="true" type="password">
+
+            </mat-form-field>
+
+            <mat-form-field appearence="fill">
+                <mat-label>Full Name</mat-label>
+                <input matInput formControlName="name" required="true">
+
+            </mat-form-field>
+
+
+            <mat-form-field appearence="fill">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" required="true">
+
+            </mat-form-field>
+            <mat-form-field appearence="fill">
+                <mat-label>phone</mat-label>
+                <input matInput formControlName="phone" required="true">
+
+            </mat-form-field>
+            <mat-form-field appearence="fill">
+                <mat-label>Role</mat-label>
+                <mat-select formControlName="role" required="true">
+                    <mat-option *ngFor="let eachRole of roles" [value]="eachRole.value">
+                        {{eachRole.viewValue}}
+                    </mat-option>
+                </mat-select>
+
+            </mat-form-field>
+<!--
+            <mat-form-field appearence="fill">
+                <mat-label>Choose date</mat-label>
+
+                <input matInput [matDatepicker]="picker" formControlName="dob2" required="true">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+
+            </mat-form-field>
+
+
+            <mat-radio-group aria-label="Select an option" formControlName="gender" required="true">
+                <mat-label><b>Gender</b></mat-label>
+                <mat-radio-button value="Male">Male</mat-radio-button>
+                <mat-radio-button value="FeMale">FeMale</mat-radio-button>
+                <mat-radio-button value="Other">Other</mat-radio-button>
+            </mat-radio-group>
+               <mat-form-field appearence="fill">
+                <mat-label>Company</mat-label>
+                <input matInput formControlName="company" required="true">
+
+
+            </mat-form-field>
+            <mat-form-field appearence="fill">
+                <mat-label>Experience</mat-label>
+                <input matInput formControlName="experience" required="true">
+
+
+            </mat-form-field>
+            <mat-form-field appearence="fill">
+                <mat-label>Package</mat-label>
+                <input matInput formControlName="package1" required="true">
+                <mat-hint>In Rupees</mat-hint>
+
+            </mat-form-field>
+-->
+            
+
+         
+
+
+
+
+            
+
+        </div>
+        <div mat-dialog-actions class="action">
+            <!--<button mat-raised-button type="reset" type="cancel" (click)="resetForm1()">Cancel</button>-->
+            <button mat-raised-button color="primary" type="submit"
+                (click)="resetForm()">{{data?'Update':'Save'}}</button>
+
+        </div>
+    </div>
+</form>

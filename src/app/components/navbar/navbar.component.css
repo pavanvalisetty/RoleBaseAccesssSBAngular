@@ -1,0 +1,18 @@
+/*.mat-toolbar{
+    background-color: rgb(32, 194, 153);
+    color: white;
+  }
+  */
+  .mat-button{
+     color: white;
+  }
+  .spacer{
+    flex: 1 1 auto;
+  }
+  
+  .logout-button {
+
+    margin-left:auto;
+    display: flex;
+    justify-content:flex-end;
+  }
